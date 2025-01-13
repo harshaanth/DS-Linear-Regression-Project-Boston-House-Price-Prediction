@@ -1,5 +1,7 @@
 # Linear Regression Project: Boston House Price Prediction
 
+Click on the link to view the Python code on Google Colab: https://github.com/harshaanth/DS-Linear-Regression-Project-Boston-House-Price-Prediction/blob/main/Boston_house_price.ipynb
+
 ## Problem Statement
 
 The problem at hand is to predict the housing prices of a town or suburb based on the features of the locality provided to us. In the process, we need to identify the most important features in the dataset. We need to employ techniques of data preprocessing and build a linear regression model that predicts the prices for us.
