@@ -2,6 +2,61 @@
 
 Click on the link to view the Python code on Google Colab: https://github.com/harshaanth/DS-Linear-Regression-Project-Boston-House-Price-Prediction/blob/main/Boston_house_price.ipynb
 
+# 🏠 Boston Housing Price Prediction Using Linear Regression
+
+## 📌 Abstract
+
+This project aims to **predict the median home values** in Boston suburbs using a **linear regression model** built on socio-economic, geographic, and structural attributes of neighborhoods. The dataset, sourced from the Boston Standard Metropolitan Statistical Area (1970), includes variables such as crime rate, number of rooms, proximity to employment centers, tax rates, and more.
+
+---
+
+### 🧩 Problem Statement
+Urban housing markets are influenced by a variety of interconnected factors, making home valuation a complex task. The goal is to build a reliable predictive model that estimates median housing prices based on multiple input features and to determine the most influential factors affecting property value.
+
+---
+
+### ⚠️ Challenges
+- High correlation among predictor variables (**multicollinearity**), which violates regression assumptions.
+- **Skewness and non-normality** in the target variable (median price).
+- Influence of **outliers** on correlation strength.
+- Ensuring **interpretability** of model coefficients for real-world application.
+
+---
+
+### 🔧 Approach & Solution
+The project followed a structured data science workflow:
+
+- **📊 Exploratory Data Analysis (EDA):** Distribution plots, heatmaps, and scatterplots to understand feature relationships.
+- **🧼 Data Preprocessing:** Log-transforming the target, scaling inputs, removing multicollinear variables using VIF.
+- **📈 Model Building:** Training multiple OLS linear regression models with statistically significant variables only.
+- **✅ Assumption Testing:** Checked linearity, zero-mean residuals, homoscedasticity (Goldfeld-Quandt Test), and normality of errors.
+- **🔁 Cross-Validation:** Applied 10-fold CV to ensure generalizability.
+- **🧮 Coefficient Interpretation:** Back-transformed coefficients to estimate **percentage change** in price per unit change in features.
+
+---
+
+### 📊 Results
+- Final model **Adjusted R²: 0.764** — explains ~77% of variance in housing prices.
+- Key predictors:
+  - 🟢 `RM`: +5.9% price increase per additional room
+  - 🔴 `CRIM`: -1.2% price decrease per unit increase in crime rate
+  - 🔵 `LSTAT`: -2.9% price decrease per % increase in lower-status population
+  - 🟢 `CHAS`: +11.5% for properties along Charles River
+- **Low error rates** on both train and test datasets:
+  - RMSE (Train/Test): ~0.19
+  - MAPE (Train/Test): ~5%
+
+---
+
+### 💼 Business Value
+This model can guide:
+
+- **Real estate investors** in estimating property values more accurately.
+- **Urban planners and municipalities** in identifying affordable housing zones.
+- **Policy makers** in targeting areas for infrastructure and zoning decisions.
+
+By understanding the factors that influence housing prices, stakeholders can make **data-driven investment and planning decisions** in the Boston housing market.
+
 ## Problem Statement
 
 The problem at hand is to predict the housing prices of a town or suburb based on the features of the locality provided to us. In the process, we need to identify the most important features in the dataset. We need to employ techniques of data preprocessing and build a linear regression model that predicts the prices for us.
