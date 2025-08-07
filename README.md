@@ -57,11 +57,7 @@ This model can guide:
 
 By understanding the factors that influence housing prices, stakeholders can make **data-driven investment and planning decisions** in the Boston housing market.
 
-## Problem Statement
-
-The problem at hand is to predict the housing prices of a town or suburb based on the features of the locality provided to us. In the process, we need to identify the most important features in the dataset. We need to employ techniques of data preprocessing and build a linear regression model that predicts the prices for us.
-
-## Project Overview
+## Detailed Overview
 
 This project is focused on predicting the median home value (`MEDV`) in the Boston area using a linear regression model. The dataset used for this analysis contains various attributes that describe different aspects of the localities in Boston, such as crime rates, the proportion of residential land, accessibility to highways, and others. The goal is to build a model that can accurately predict home prices based on these features.
 
